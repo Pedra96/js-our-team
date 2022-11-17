@@ -14,39 +14,60 @@ Trasformare la stringa foto in una immagine effettiva
 BONUS 2:
 Organizzare i singoli membri in card/schede (BOOTSTRAP!)
 */
-let studenti = [
+
+let membersTeam = [
     {
         nome: "Wayne Barnett",
         ruolo: "Founder & CEO",
-        image: "wayne-barnett-founder-ceo.jpg"
+        image: './img/wayne-barnett-founder-ceo.jpg'
     },
     {
         nome: "Angela Caroll",
         ruolo: "Chief Editor",
-        image: "angela-caroll-chief-editor.jpg"   
+        image: "./img/angela-caroll-chief-editor.jpg"   
     },
     {
         nome: "Walter Gordon",
         ruolo: "Office Manager",
-        image: "walter-gordon-office-manager.jpg"
+        image: "./img/walter-gordon-office-manager.jpg"
     },
     {
         nome: "Angela Lopez",
         ruolo: "Social Media Manager",
-        image: "angela-lopez-social-media-manager.jpg"        
+        image: "./img/angela-lopez-social-media-manager.jpg"        
     },
     {
         nome: "Scott Estrada",
         ruolo: "Developer",
-        image: "scott-estrada-developer.jpg"   
+        image: "./img/scott-estrada-developer.jpg"   
     },
     {
         nome: "Barbara Ramos",
         ruolo: "Graphic Designer",
-        image: "barbara-ramos-graphic-designer.jpg"         
+        image: "./img/barbara-ramos-graphic-designer.jpg"         
     }
 ]
 
-for(let studente of studenti){
-    console.log(studente);
+for(let member of membersTeam){
+    document.getElementById("teamContainer").innerHTML+=`
+    <div class="col-12 col-md-3 m-2 pb-2 bg-dark pt-3 arrotondamento">
+    <img src=${member.image} class="card-img-top arrotondamento" alt="...">
+    <div class="card-body">
+    <h5 class="card-title mt-2">${member.ruolo}</h5>
+    <p class="card-text">${member.nome}</p>
+    `
 }
+
+
+/*<div class="card" style="width: 18rem;" id="memberImage">
+    <div class="card-body">
+        <h5 class="card-title" id="memberRuolo"></h5>
+        <p class="card-text" id="nomeMember"></p>
+    </div>
+</div>
+
+
+console.log(member);
+    document.getElementById("nomeMember").innerHTML+=member.nome;
+    document.getElementById("memberRuolo").innerHTML+=member.ruolo;
+    document.getElementById("memberImage").innerHTML+=member.image;*/
