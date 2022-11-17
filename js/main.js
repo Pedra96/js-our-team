@@ -50,7 +50,7 @@ let membersTeam = [
 
 for(let member of membersTeam){
     document.getElementById("teamContainer").innerHTML+=`
-    <div class="col-12 col-md-3 m-2 pb-2 bg-dark pt-3 arrotondamento">
+    <div class="col-12 col-md-5 col-lg-3 m-2 pb-2 bg-dark pt-3 arrotondamento">
     <img src=${member.image} class="card-img-top arrotondamento" alt="...">
     <div class="card-body">
     <h5 class="card-title mt-2">${member.ruolo}</h5>
