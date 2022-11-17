@@ -57,17 +57,3 @@ for(let member of membersTeam){
     <p class="card-text">${member.nome}</p>
     `
 }
-
-
-/*<div class="card" style="width: 18rem;" id="memberImage">
-    <div class="card-body">
-        <h5 class="card-title" id="memberRuolo"></h5>
-        <p class="card-text" id="nomeMember"></p>
-    </div>
-</div>
-
-
-console.log(member);
-    document.getElementById("nomeMember").innerHTML+=member.nome;
-    document.getElementById("memberRuolo").innerHTML+=member.ruolo;
-    document.getElementById("memberImage").innerHTML+=member.image;*/
